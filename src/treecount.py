@@ -8,8 +8,8 @@ import platform
 class directory_path:
 
     """
-    Python Utility Package that displays out the Tree Structure of a Particular Directory.
-    @author : rahulbordoloi
+    Python Utility Package that displays out the Tree Structure of a user-defined directory with their respective file count.
+    @author : rushi
     """
 
     # Constructor
@@ -25,6 +25,7 @@ class directory_path:
         self.path = Path(str(path))
         self.parent = parent_path
         self.is_last = is_last
+        self.filecount = 0
         if self.parent:
             self.depth = self.parent.depth + 1
         else:
@@ -57,6 +58,8 @@ class directory_path:
         
         ## Build the Tree
         countNodes = 1
+        filecount = 0
+        extensionDict = {}
         for path in children:
             is_last = countNodes == len(children)
             if path.is_dir():
@@ -65,8 +68,14 @@ class directory_path:
                                          is_last = is_last,
                                          criteria = criteria)
             else:
-                yield cls(path, root_Directory_Display, is_last)
+                filecount = filecount + 1
+                extension = path.suffix
+                extensionDict [extension] = extensionDict.get(extension, 0) + 1 
+                # yield filecount
             countNodes += 1
+        if filecount > 0:
+            for extension, count in extensionDict.items():
+                yield cls(f'*{extension}:{count}', root_Directory_Display, is_last)
 
     # Check Condition for Root Directory
     @classmethod

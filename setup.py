@@ -5,14 +5,14 @@ with open("README.md", "r") as fh:
 
 setup(
 
-    name = 'directory_tree',
+    name = 'treecount',
     version = '0.0.2',
-    description = 'Utility Package that displays out the Tree Structure of a Particular Directory.',
-    url = "https://github.com/rahulbordoloi/Directory-Tree/",
-    author = "Rahul Bordoloi",
-    author_email = "rahulbordoloi24@gmail.com",
+    description = 'Utility Package that displays out the Tree Structure of a user-defined directory with their respective file count.',
+    url = "https://github.com/rushic24/treecount/",
+    author = "Rushi Chaudhari",
+    author_email = "rushic24@gmail.com",
 
-    py_modules = ['directory_tree'],
+    py_modules = ['treecount'],
     package_dir = {'': 'src'},
 
     classifiers = [

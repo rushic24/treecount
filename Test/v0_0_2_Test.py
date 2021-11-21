@@ -1,5 +1,5 @@
 # Importing Module(s)
-from src.directory_tree import display_tree
+from src.treecount import display_tree
 
 
 # Main Method
