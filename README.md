@@ -1,4 +1,4 @@
-# Directory Tree Package
+# Treecount Package
 
 [![Setup Automated](https://img.shields.io/badge/setup-automated-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 ![Test passing](https://img.shields.io/badge/Tests-passing-brightgreen.svg)
