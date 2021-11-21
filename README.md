@@ -80,13 +80,15 @@ Main Directory/
 │   └── Directory 2/
 │       ├── Directory 3/
 │       │   └── Directory 4/
-│       │       └── Hello World.txt
-│       └── Say World.txt
+│       │       └── *.txt:1
+│       │       └── *:2
+│       └── *.txt:1
 ├── Directory A/
-│   └── Hmm.txt
-├── directory-tree-print.cpp
-├── letseee.txt
-└── printTree.exe
+│   └── *.txt:1
+└── *.cpp:1
+└── *.txt:1
+└── *.exe:1
+
 
 ```
 
@@ -107,13 +109,15 @@ Main Directory/
 │   └── Directory 2/
 │       ├── Directory 3/
 │       │   └── Directory 4/
-│       │       └── Hello World.txt
-│       └── Say World.txt
+│       │       └── *.txt:1
+│       │       └── *:2
+│       └── *.txt:1
 ├── Directory A/
-│   └── Hmm.txt
-├── directory-tree-print.cpp
-├── letseee.txt
-└── printTree.exe
+│   └── *.txt:1
+└── *.cpp:1
+└── *.txt:1
+└── *.exe:1
+
 
 ```
 
